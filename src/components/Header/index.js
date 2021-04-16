@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import dynamic from "next/dynamic";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Header() {
     const [navbar, setNavbar] = useState(false);
@@ -28,16 +28,18 @@ export default function Header() {
                 </div>
                 <ul className="flex relative">
                     <li className="list-none my-2">
-                        <a href="#home" className={navbar ? "text-lg font-medium text-gray-300 px-2 py-0 hover:text-blue-500" :
-                            "text-lg font-medium text-gray-800 px-2 py-0 hover:text-blue-500"}>
+                        <Link to="home" duration={500} smooth={true} spy={true}
+                            className={navbar ? "text-lg font-medium text-gray-300 px-2 py-0 hover:text-blue-500" :
+                                "text-lg font-medium text-gray-800 px-2 py-0 hover:text-blue-500"}>
                             Home
-                       </a>
+                       </Link>
                     </li>
                     <li className="list-none my-2">
-                        <a href="#home" className={navbar ? "text-lg font-medium text-gray-300 px-2 py-0 hover:text-blue-500" :
-                            "text-lg font-medium text-gray-800 px-2 py-0 hover:text-blue-500"}>
+                        <Link to="about" duration={500} smooth={true} spy={true}
+                            className={navbar ? "text-lg font-medium text-gray-300 px-2 py-0 hover:text-blue-500" :
+                                "text-lg font-medium text-gray-800 px-2 py-0 hover:text-blue-500"}>
                             About
-                       </a>
+                       </Link>
                     </li>
                     <li className="list-none my-2">
                         <a href="#home" className={navbar ? "text-lg font-medium text-gray-300 px-2 py-0 hover:text-blue-500" :

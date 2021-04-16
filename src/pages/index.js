@@ -10,11 +10,10 @@ export default function Home() {
             <div className="text-2xl text-gray-900">Hello,</div>
             <div className="text-7xl font-semibold text-gray-900">I'm Caio Henrique</div>
             <div className="text-4xl text-blue-500 whitespace-nowrap overflow-hidden border-r-4 border-blue-500 animate-typing">
-              Front End Developer.
+              Full Stack Developer.
             </div>
             <div className="text-2xl text-gray-900">From Brazil</div>
-            <button className="outline-none px-4 py-2 rounded-md text-2xl bg-blue-500 text-white border-2 border-blue-500 mt-2
-             hover:bg-transparent hover:text-blue-500">
+            <button className="outline-none px-4 py-2 rounded-md text-2xl hover:bg-blue-500 hover:text-white border-2 border-blue-500 mt-2 text-blue-500">
               Hire me
             </button>
           </div>
