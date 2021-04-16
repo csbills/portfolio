@@ -28,24 +28,25 @@ export default function Header() {
                 </div>
                 <ul className="flex relative">
                     <li className="list-none my-2">
-                        <Link to="home" duration={500} smooth={true} spy={true}
-                            className={navbar ? "text-lg font-medium text-gray-300 px-2 py-0 hover:text-blue-500" :
-                                "text-lg font-medium text-gray-800 px-2 py-0 hover:text-blue-500"}>
+                        <Link to="home" duration={750} smooth={true} spy={true}
+                            className={navbar ? "text-lg font-medium text-gray-300 px-2 py-0 hover:text-blue-500 cursor-pointer" :
+                                "text-lg font-medium text-gray-800 px-2 py-0 hover:text-blue-500 cursor-pointer"}>
                             Home
                        </Link>
                     </li>
                     <li className="list-none my-2">
-                        <Link to="about" duration={500} smooth={true} spy={true}
-                            className={navbar ? "text-lg font-medium text-gray-300 px-2 py-0 hover:text-blue-500" :
-                                "text-lg font-medium text-gray-800 px-2 py-0 hover:text-blue-500"}>
+                        <Link to="about" duration={750} smooth={true} spy={true}
+                            className={navbar ? "text-lg font-medium text-gray-300 px-2 py-0 hover:text-blue-500 cursor-pointer" :
+                                "text-lg font-medium text-gray-800 px-2 py-0 hover:text-blue-500 cursor-pointer"}>
                             About
                        </Link>
                     </li>
                     <li className="list-none my-2">
-                        <a href="#home" className={navbar ? "text-lg font-medium text-gray-300 px-2 py-0 hover:text-blue-500" :
-                            "text-lg font-medium text-gray-800 px-2 py-0 hover:text-blue-500"}>
+                        <Link to="skills" duration={750} smooth={true} spy={true}
+                            className={navbar ? "text-lg font-medium text-gray-300 px-2 py-0 hover:text-blue-500 cursor-pointer" :
+                                "text-lg font-medium text-gray-800 px-2 py-0 hover:text-blue-500 cursor-pointer"}>
                             Skills
-                       </a>
+                       </Link>
                     </li>
                     <li className="list-none my-2">
                         <a href="#home" className={navbar ? "text-lg font-medium text-gray-300 px-2 py-0 hover:text-blue-500" :
